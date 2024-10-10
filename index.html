@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Aos Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-white">
+      <nav class="flex pt-3 justify-between items-center w-[92%] mx-auto">
+        <div>
+          <a href="" class="w-16 text-xl font-bold text-slate-500">Portofolio</a>
+        </div>
+        <div class="nav-links md: duration-500 menu md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+            <li>
+              <a class="hover:text-gray-500" href="#">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">About</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Service</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Project</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Skills</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]"><a href="">Download CV</a></button>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <!-- <section class="pt-28 pb-16">
+      <div class="container">
+        <div class="flex justify-center items-center">
+          <div class="w-full px-4">
+            <img src="./dist/img/dhafin.png" class="grayscale bg-slate-500" alt="" />
+          </div>
+          <div class="w-full px-4">
+            <h2>Muhammad Dhafin Haron</h2>
+            <span>
+              <p>Saya seorang Software Engginer yang berdedikasi dan selalu berusaha untuk meningkatkan.</p>
+              <ul>
+                <li><i></i></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="home" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex z-20 flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h2 class="text-slate-500 font-medium text-base">Hey There 👋 I am<span class="block text-5xl font-semibold">M.Dhafin Haron</span></h2>
+
+            <h2 class="font-medium text-indigo-500 text-lg lg:text-2xl">Programmer & <span class="text-dark">Student</span></h2>
+            <p class="text-base w-2/3 font-medium mb-8">Saya seorang Software Engginer yang berdedikasi dan selalu berusaha untuk meningkat.</p>
+            <button class="border-slate-400 border-2 text-white hover:text-black bg-slate-400 hover:bg-transparent rounded-full py-3 transition duration-300 px-6">
+              <a href="">Hubungi Saya</a>
+            </button>
+            <button class="border-indigo-400 ml-2 border-2 text-white hover:text-black bg-indigo-400 hover:bg-transparent rounded-full py-3 transition duration-300 px-6">
+              <a href="">Learn More</a>
+            </button>
+          </div>
+          <div class="w-full self-end px-4 pt-12 md:pt-2 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img src="./dist/img/dhafin.jpeg" alt="Dhafin Haron" class="max-w-full md:w-[450px] w-[400px] -mt-16 mx-auto" />
+
+              <span class="absolute -z-10 -bottom-0 left-1/2 -translate-x-1/2 scale-95 md:scale-125">
+                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#6366f1"
+                    d="M44.8,-58.6C59.4,-51.1,73.6,-39.8,79.6,-25C85.7,-10.2,83.6,8.2,75.5,21.8C67.3,35.5,53.1,44.5,39.5,49.2C25.9,53.8,13,54.2,-1.1,55.7C-15.2,57.3,-30.4,60,-41.2,54.4C-51.9,48.8,-58.2,34.9,-64.6,19.9C-71,4.9,-77.4,-11.2,-72.8,-23.2C-68.3,-35.2,-52.8,-43.3,-38.8,-51.1C-24.8,-58.9,-12.4,-66.5,1.3,-68.3C15.1,-70.1,30.2,-66.2,44.8,-58.6Z"
+                    transform="translate(100 100) scale(1.2)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div data-aos-duration="1000" data-aos="zoom-in-right" class="w-full self-center mt-10 px-4 lg:w-1/2">
+            <h2 class="text-2xl mb-2 font-bold text-indigo-500">ABOUT ME</h2>
+            <h3 class="text-4xl text-gray-900 font-bold">Yuk, Kenali diri saya!</h3>
+            <p class="py-2 font-medium text-base text-slate-600">
+              Saya seorang penggemar game dan beraspirasi untuk membuat aplikasi game yang inovatif. Selain berkutat dengan kode dan desain, saya juga aktif dalam olahraga seperti bersepeda, lari, dan bermain basket. Kombinasi antara
+              kecintaan pada teknologi dan gaya hidup sehat menjadikan setiap hari penuh tantangan dan inspirasi!
+            </p>
+          </div>
+          <div data-aos-duration="1000" data-aos="zoom-in-left" class="w-full self-end px-4 mt-10 lg:w-1/2">
+            <h2 class="text-2xl mb-2 font-bold text-gray-900">IKUTI MEDIA SOSIAL SAYA</h2>
+            <p class="text-base font-medium text-slate-600">Ikuti media sosial saya untuk konten seru, tips menarik, dan update terbaru! Bergabunglah dalam komunitas kami dan jadilah bagian dari perjalanan ini!</p>
+            <div class="flex mt-5 items-center">
+              <!-- Youtube -->
+              <a href="https://youtube.com/@bigblacks6596/featured" target="_blank" class="h-9 w-9 mr-3 border hover:bg-indigo-500 text-gray-400 hover:text-white border-slate-300 rounded-full flex justify-center items-center">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/dhafinharon/?hl=id" target="_blank" class="h-9 w-9 mr-3 border hover:bg-indigo-500 text-gray-400 hover:text-white border-slate-300 rounded-full flex justify-center items-center">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <a href="" target="_blank" class="h-9 w-9 mr-3 border hover:bg-indigo-500 text-gray-400 hover:text-white border-slate-300 rounded-full flex justify-center items-center">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Twitter</title>
+                  <path
+                    d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"
+                  />
+                </svg>
+              </a>
+              <a href="" target="_blank" class="h-9 w-9 mr-3 border hover:bg-indigo-500 text-gray-400 hover:text-white border-slate-300 rounded-full flex justify-center items-center">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>TikTok</title>
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+              <a href="" target="_blank" class="h-9 w-9 mr-3 border hover:bg-indigo-500 text-gray-400 hover:text-white border-slate-300 rounded-full flex justify-center items-center">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="pt-36 pb-32">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="text-center mx-auto">
+          <h2 class="text-2xl font-bold text-indigo-500 mb-2">Service</h2>
+          <p class="text-sm md:w-1/2 text-slate-500 w-full mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellat aliquam incidunt? Aperiam, et laudantium ad exercitationem cupiditate vero error</p>
+        </div>
+
+        <div class="flex flex-wrap -m-4 md:-pt-24 pt-12">
+          <div class="p-4 sm:w-1/2 md:w-1/4 w-full">
+            <div class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12">
+              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-indigo-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div class="relative z-10 mx-auto max-w-md">
+                  <span class="grid h-20 w-20 place-items-center rounded-full bg-indigo-500 transition-all duration-300 group-hover:bg-indigo-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-10 w-10 text-white transition-all">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                      />
+                    </svg>
+                  </span>
+                  <h2 class="text-xl pt-5 font-bold text-gray-600 transition-all duration-300 group-hover:text-white/90">Consultation</h2>
+                  <div class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- https://play.tailwindcss.com/eCfibrSI2X -->
+          </div>
+          <div class="p-4 sm:w-1/2 md:w-1/4 w-full">
+            <div class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12">
+              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-indigo-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div class="relative z-10 mx-auto max-w-md">
+                  <span class="grid h-20 w-20 place-items-center rounded-full bg-indigo-500 transition-all duration-300 group-hover:bg-indigo-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" stroke="currentColor" class="h-10 w-10 fill-current text-white transition-all">
+                      <path
+                        d="M272.2 64.6l-51.1 51.1c-15.3 4.2-29.5 11.9-41.5 22.5L153 161.9C142.8 171 129.5 176 115.8 176L96 176l0 128c20.4 .6 39.8 8.9 54.3 23.4l35.6 35.6 7 7c0 0 0 0 0 0L219.9 397c6.2 6.2 16.4 6.2 22.6 0c1.7-1.7 3-3.7 3.7-5.8c2.8-7.7 9.3-13.5 17.3-15.3s16.4 .6 22.2 6.5L296.5 393c11.6 11.6 30.4 11.6 41.9 0c5.4-5.4 8.3-12.3 8.6-19.4c.4-8.8 5.6-16.6 13.6-20.4s17.3-3 24.4 2.1c9.4 6.7 22.5 5.8 30.9-2.6c9.4-9.4 9.4-24.6 0-33.9L340.1 243l-35.8 33c-27.3 25.2-69.2 25.6-97 .9c-31.7-28.2-32.4-77.4-1.6-106.5l70.1-66.2C303.2 78.4 339.4 64 377.1 64c36.1 0 71 13.3 97.9 37.2L505.1 128l38.9 0 40 0 40 0c8.8 0 16 7.2 16 16l0 208c0 17.7-14.3 32-32 32l-32 0c-11.8 0-22.2-6.4-27.7-16l-84.9 0c-3.4 6.7-7.9 13.1-13.5 18.7c-17.1 17.1-40.8 23.8-63 20.1c-3.6 7.3-8.5 14.1-14.6 20.2c-27.3 27.3-70 30-100.4 8.1c-25.1 20.8-62.5 19.5-86-4.1L159 404l-7-7-35.6-35.6c-5.5-5.5-12.7-8.7-20.4-9.3C96 369.7 81.6 384 64 384l-32 0c-17.7 0-32-14.3-32-32L0 144c0-8.8 7.2-16 16-16l40 0 40 0 19.8 0c2 0 3.9-.7 5.3-2l26.5-23.6C175.5 77.7 211.4 64 248.7 64L259 64c4.4 0 8.9 .2 13.2 .6zM544 320l0-144-48 0c-5.9 0-11.6-2.2-15.9-6.1l-36.9-32.8c-18.2-16.2-41.7-25.1-66.1-25.1c-25.4 0-49.8 9.7-68.3 27.1l-70.1 66.2c-10.3 9.8-10.1 26.3 .5 35.7c9.3 8.3 23.4 8.1 32.5-.3l71.9-66.4c9.7-9 24.9-8.4 33.9 1.4s8.4 24.9-1.4 33.9l-.8 .8 74.4 74.4c10 10 16.5 22.3 19.4 35.1l74.8 0zM64 336a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm528 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"
+                      />
+                    </svg>
+                  </span>
+                  <h2 class="text-xl pt-5 font-bold text-gray-600 transition-all duration-300 group-hover:text-white/90">Networking</h2>
+                  <div class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- https://play.tailwindcss.com/eCfibrSI2X -->
+          </div>
+          <div class="p-4 sm:w-1/2 md:w-1/4 w-full">
+            <div class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12">
+              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-indigo-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div class="relative z-10 mx-auto max-w-md">
+                  <span class="grid h-20 w-20 place-items-center rounded-full bg-indigo-500 transition-all duration-300 group-hover:bg-indigo-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" stroke="currentColor" class="h-10 w-10 fill-current text-white transition-all">
+                      <path
+                        d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7c0 0 0 0 0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5L109 384c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8c0 0 0 0 0 0s0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4c0 0 0 0 0 0s0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5l-48.6 0c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8c0 0 0 0 0 0s0 0 0 0s0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80l0-16 160 0 0 16c0 44.2-35.8 80-80 80z"
+                      />
+                    </svg>
+                  </span>
+                  <h2 class="text-xl pt-5 font-bold text-gray-600 transition-all duration-300 group-hover:text-white/90">Idea</h2>
+                  <div class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- https://play.tailwindcss.com/eCfibrSI2X -->
+          </div>
+          <div class="p-4 sm:w-1/2 md:w-1/4 w-full">
+            <div class="relative flex flex-col justify-center overflow-hidden py-6 sm:py-12">
+              <div class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                <span class="absolute top-10 z-0 h-20 w-20 rounded-full bg-indigo-500 transition-all duration-300 group-hover:scale-[10]"></span>
+                <div class="relative z-10 mx-auto max-w-md">
+                  <span class="grid h-20 w-20 place-items-center rounded-full bg-indigo-500 transition-all duration-300 group-hover:bg-indigo-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" stroke="currentColor" class="h-10 w-10 fill-current text-white transition-all">
+                      <path
+                        d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"
+                      />
+                    </svg>
+                  </span>
+                  <h2 class="text-xl pt-5 font-bold text-gray-600 transition-all duration-300 group-hover:text-white/90">Team Work</h2>
+                  <div class="space-y-6 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                    <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- https://play.tailwindcss.com/eCfibrSI2X -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="bg-slate-200 pt-36 pb-32">
+      <div class="container">
+        <div class="text-center mx-auto">
+          <h2 class="text-2xl font-bold text-indigo-500 mb-2">My Project</h2>
+          <p class="text-sm md:w-1/2 w-full text-slate-500 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate a provident tempora! Accusantium doloremque nesciunt facere ullam! Quos, atque debitis!</p>
+        </div>
+        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+          <div class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 md:grid-cols-3 gap-10">
+            <!-- CARD -->
+            <div class="rounded overflow-hidden shadow-lg flex flex-col">
+              <a href="#"></a>
+              <div class="relative">
+                <a href="#">
+                  <img class="w-full" src="/dist/img/kuliner.JPG" alt="Sunset in the mountains" />
+                  <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div> </a
+                ><a href="#!">
+                  <div class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">Cooking</div>
+                </a>
+              </div>
+              <div class="px-6 py-4 mb-auto">
+                <a href="#" class="font-medium text-lg hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Web Unina Kitchen</a>
+                <p class="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="px-6 py-4">
+                <button class="px-4 py-2 border-2 text-white duration-300 transition hover:text-gray-900 border-indigo-500 hover:bg-transparent bg-indigo-500">
+                  <a href="https://mhdhafin.github.io/Kuliner/" class="flex justify-between items-center"><span class="text-sm mr-2">Live Preview</span><ion-icon class="" name="arrow-forward-outline"></ion-icon></a>
+                </button>
+              </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg flex flex-col">
+              <a href="#"></a>
+              <div class="relative">
+                <a href="#">
+                  <img class="w-full" src="/dist/img/song.JPG" alt="Sunset in the mountains" />
+                  <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div> </a
+                ><a href="#!">
+                  <div class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">Cooking</div>
+                </a>
+              </div>
+              <div class="px-6 py-4 mb-auto">
+                <a href="#" class="font-medium text-lg hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Web Web Fav Song</a>
+                <p class="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="px-6 py-4">
+                <button class="px-4 py-2 border-2 text-white duration-300 transition hover:text-gray-900 border-indigo-500 hover:bg-transparent bg-indigo-500">
+                  <a href="" class="flex justify-between items-center"><span class="text-sm mr-2">Live Preview</span><ion-icon class="" name="arrow-forward-outline"></ion-icon></a>
+                </button>
+              </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg flex flex-col">
+              <a href="#"></a>
+              <div class="relative">
+                <a href="#">
+                  <img class="w-full" src="/dist/img/mosque.JPG" alt="Sunset in the mountains" />
+                  <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div> </a
+                ><a href="#!">
+                  <div class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">Cooking</div>
+                </a>
+              </div>
+              <div class="px-6 py-4 mb-auto">
+                <a href="#" class="font-medium text-lg hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Web Jadwal Sholat</a>
+                <p class="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="px-6 py-4">
+                <button class="px-4 py-2 border-2 text-white duration-300 transition hover:text-gray-900 border-indigo-500 hover:bg-transparent bg-indigo-500">
+                  <a href="" class="flex justify-between items-center"><span class="text-sm mr-2">Live Preview</span><ion-icon class="" name="arrow-forward-outline"></ion-icon></a>
+                </button>
+              </div>
+            </div>
+            <div class="rounded overflow-hidden shadow-lg flex flex-col">
+              <a href="#"></a>
+              <div class="relative">
+                <a href="#">
+                  <img class="w-full" src="/dist/img/.JPG" alt="Sunset in the mountains" />
+                  <div class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div> </a
+                ><a href="#!">
+                  <div class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">Cooking</div>
+                </a>
+              </div>
+              <div class="px-6 py-4 mb-auto">
+                <a href="#" class="font-medium text-lg hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Web Unina Kitchen</a>
+                <p class="text-gray-500 text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="px-6 py-4">
+                <button class="px-4 py-2 border-2 text-white duration-300 transition hover:text-gray-900 border-indigo-500 hover:bg-transparent bg-indigo-500">
+                  <a href="" class="flex justify-between items-center"><span class="text-sm mr-2">Live Preview</span><ion-icon class="" name="arrow-forward-outline"></ion-icon></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
