@@ -29,13 +29,4 @@ contactForm.addEventListener("submit", function (e) {
         navLinks.classList.toggle("top-[9%]");
       }
 
-      function onToggleMenu(icon) {
-        const menu = document.getElementById("navMenu");
-        if (menu.style.top === "0px") {
-          menu.style.top = "-100%"; // Menyembunyikan menu
-          icon.name = "menu"; // Ubah ikon menjadi menu burger
-        } else {
-          menu.style.top = "0px"; // Menampilkan menu
-          icon.name = "close"; // Ubah ikon menjadi close
-        }
-      }
+      
