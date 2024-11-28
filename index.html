@@ -453,26 +453,6 @@
     <script src="./dist/JS/script.js"></script>
 
     <script>
-      const navLinks = document.querySelector(".nav-links");
-
-      function onToggleMenu(e) {
-        e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[9%]");
-      }
-
-      function onToggleMenu(icon) {
-        const menu = document.getElementById("navMenu");
-        if (menu.style.top === "0px") {
-          menu.style.top = "-100%"; // Menyembunyikan menu
-          icon.name = "menu"; // Ubah ikon menjadi menu burger
-        } else {
-          menu.style.top = "0px"; // Menampilkan menu
-          icon.name = "close"; // Ubah ikon menjadi close
-        }
-      }
-    </script>
-
-    <script>
       AOS.init();
     </script>
   </body>
